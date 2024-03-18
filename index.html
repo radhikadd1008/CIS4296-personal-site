@@ -25,25 +25,12 @@
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
     <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Radhika Khandelwal</title>
   </head>
 
   <body>
@@ -104,8 +91,8 @@
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
-          Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          Hi! I'm
+          <span id="name">Radhika Khandelwal</span>!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -122,22 +109,6 @@
             title="Python"
           />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/angular.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Angular"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/typescript.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="TypeScript"
-          />
-        </div>
 
         <div class="col text-center">
           <img
@@ -145,14 +116,6 @@
             data-bs-toggle="tooltip"
             data-placement="top"
             title="C#"
-          />
-        </div>
-        <div class="col text-center">
-          <img
-            src="images/node.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="Node.js"
           />
         </div>
         <div class="col text-center">
@@ -180,14 +143,6 @@
             title="Microsoft SQL Server"
           />
         </div>
-        <div class="col text-center">
-          <img
-            src="images/mongodb.jpg"
-            data-bs-toggle="tooltip"
-            data-placement="top"
-            title="MongoDB"
-          />
-        </div>
       </div>
 
       <div class="row mt-3 mt-lg-5 next">
@@ -199,6 +154,27 @@
         ></a>
       </div>
     </div>
+
+    <div>
+      <div class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center">
+        <div class="row mx-auto">
+          <h4 class="h1 font-weight-bold mx-auto text-center">About Me</h4>
+        </div>
+        <div class="row mx-auto">
+          <h5 class="h5 mx-auto text-center text-primary text-opacity-75">
+            I'm a student, developer, and a bit of a nerd too...
+    </div>
+
+    <div class="row mt-3 mt-lg-5 next">
+      <a href="#projects" class="col"
+        ><iconify-icon
+          icon="material-symbols:arrow-circle-down"
+          class="arrow-next"
+        ></iconify-icon
+      ></a>
+    </div>
+  </div>
+  
     <div
       class="container section min-vh-100 d-flex justify-content-center flex-column align-items-center"
       id="projects"
@@ -211,47 +187,25 @@
           I've worked on some neat things.
         </h5>
       </div>
-      <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Home Building Site</h5>
+          <p class="card-text">a Home Builder site that allows you to build your dream home. Users can view the costs of their desired home while the site keeps track of the homes bought and the associated sales.</p>
+        </div>
       </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
-        </p>
+      
+      <div class="card text-center" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Job Portal</h5>
+          <p class="card-text"> a Job Hunting-Focused platform that allows students, faculty members, and guests in the CIS portion of Temple University to apply for and/or list jobs. Students will be able to search for job listings on the platform, while faculty members and guests will be able to list jobs on the platform. </p>
+        </div>
       </div>
-      <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
-      </div>
-      <div class="row w-100 mb-4">
-        <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
-        </p>
-      </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
+      
+      <div class="card text-end" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Dating Site</h5>
+          <p class="card-text">a dating site that allows users to create a profile, search for other users, and message them. Users can also view other users' profiles and like them.</p>
+        </div>
       </div>
       <div class="row mt-3 next">
         <a href="#courses" class="col"
@@ -347,6 +301,13 @@
           I don't bite.
         </h5>
       </div>
+    <p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Contact Information
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
       <div class="row my-4 contact-wrapper gap-3">
         <a href="mailto:johndoe@gmail.com" class="col text-black">
           <iconify-icon
@@ -379,6 +340,8 @@
           ></iconify-icon>
         </a>
       </div>
+    </div>
+  </div>
       <div class="row mt-5">
         <div>
           <a href="#home">
